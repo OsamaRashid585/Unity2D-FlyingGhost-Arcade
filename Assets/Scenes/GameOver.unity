@@ -290,7 +290,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &648502959
+--- !u!1 &385963217
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -298,36 +298,34 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 648502961}
-  - component: {fileID: 648502960}
+  - component: {fileID: 385963219}
+  - component: {fileID: 385963218}
   m_Layer: 0
-  m_Name: GameManger
+  m_Name: LevelManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &648502960
+--- !u!114 &385963218
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648502959}
+  m_GameObject: {fileID: 385963217}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6778dd8b4fae67a40b4ee171992cd3b7, type: 3}
+  m_Script: {fileID: 11500000, guid: 973c0e2aa9ab9824cbb1f923a2e5dc46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scoreTxt: {fileID: 0}
-  _score: 0
---- !u!4 &648502961
+--- !u!4 &385963219
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648502959}
+  m_GameObject: {fileID: 385963217}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -501,8 +499,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 648502960}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 385963218}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1
         m_Arguments:

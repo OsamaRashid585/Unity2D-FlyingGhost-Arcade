@@ -7,10 +7,12 @@ public class Player : MonoBehaviour
 {
     private Rigidbody2D _rb;
     public float _flyPower;
+    private GameManager _gameManager;
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _gameManager = FindObjectOfType<GameManager>();
     }
     private void FixedUpdate()
     {
@@ -26,7 +28,7 @@ public class Player : MonoBehaviour
         if (collision.CompareTag("Point"))
         {
             Destroy(collision.gameObject);
-            GameManager.Instance._score++;
+            _gameManager._score++;
         }
         
     }
